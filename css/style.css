@@ -1,0 +1,132 @@
+:root {
+    --bg: #020101;
+    --a: #3D0B0D;
+    --b: #53080E;
+    --c: #72090F;
+    --d: #930510;
+    --e: #B21F29
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body {
+    font-family: Poppins, sans-serif;
+    background: #020101;
+    color: #fff;
+    overflow: hidden
+}
+.aurora {
+    position: fixed;
+    inset: -20%;
+    background: radial-gradient(circle at 20% 20%, #B21F2950, transparent 35%), radial-gradient(circle at 80% 70%, #72090F70, transparent 40%), linear-gradient(160deg, #020101, #3D0B0D, #020101);
+    filter: blur(40px);
+    animation: f 10s infinite alternate;
+    z-index: -2
+}
+.stars {
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(#fff 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: .2;
+    z-index: -1
+}
+.hero,
+.scene {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 2rem
+}
+.scene {
+    display: none;
+    text-align: center
+}
+.glass {
+    width: min(760px, 92vw);
+    padding: 3rem;
+    border-radius: 28px;
+    background: #ffffff10;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ffffff20;
+    text-align: center;
+    box-shadow: 0 0 80px #b21f2933
+}
+.count {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 2rem 0;
+    flex-wrap: wrap
+}
+.count div {
+    background: #ffffff10;
+    padding: 18px;
+    border-radius: 18px;
+    min-width: 90px
+}
+.count span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700
+}
+button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--c), var(--e));
+    color: #fff
+}
+button:disabled {
+    opacity: .45
+}
+h1 {
+    font: 700 4rem 'Cormorant Garamond', serif
+}
+.tag{
+    font-size:15px;
+    letter-spacing:4px;
+    color:#F2B6B6;
+    text-transform:uppercase;
+}
+.title{
+    font-family:"Cormorant Garamond", serif;
+    font-size:72px;
+    font-weight:700;
+    line-height:1.1;
+    color:white;
+    margin-top:15px;
+}
+.title span{
+    display:block;
+    margin-top:8px;
+    font-family:"Great Vibes", cursive;
+    font-size:64px;
+    color:#FFB4C0;
+    font-weight:400;
+}
+.description{
+    margin:35px auto;
+    max-width:550px;
+    font-size:17px;
+    line-height:1.9;
+    color:#E7DCDC;
+}
+.divider{
+    margin:25px 0;
+    font-size:22px;
+    color:#FF8C9B;
+}
+.heart-icon{
+    font-size:38px;
+    color:#FF6F81;
+    margin-bottom:20px;
+    animation:pulse 2s infinite;
+}
+@keyframes f {
+    to {
+        transform: scale(1.1) rotate(8deg)
+    }
+}

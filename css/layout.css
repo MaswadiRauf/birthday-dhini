@@ -1,0 +1,31 @@
+/* ==========================================
+   LAYOUT
+========================================== */
+
+.hero,
+.scene{
+    display:grid;
+    place-items:center;
+    min-height:100vh;
+    padding:2rem;
+}
+
+.scene{
+    display:none;
+    text-align:center;
+}
+
+.glass{
+    width:min(760px,92vw);
+    padding:3rem;
+    border-radius:var(--radius-large);
+
+    background:var(--glass-bg);
+    backdrop-filter:blur(20px);
+
+    border:1px solid var(--glass-border);
+
+    text-align:center;
+
+    box-shadow:0 0 80px var(--glass-shadow);
+}
