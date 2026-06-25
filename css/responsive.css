@@ -1,0 +1,32 @@
+/* ==========================================
+   TABLET
+========================================== */
+/* @media (max-width:768px) {
+    .title {
+        font-size: 52px;
+    }
+    .title span {
+        font-size: 46px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .count {
+        gap: 12px;
+    }
+} */
+/* ==========================================
+   MOBILE
+========================================== */
+@media (max-width:480px) {
+    .glass {
+        padding: 2rem;
+    }
+    .count {
+        flex-direction: column;
+        align-items: center;
+    }
+    .description {
+        font-size: 15px;
+    }
+}
